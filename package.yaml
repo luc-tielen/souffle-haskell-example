@@ -1,0 +1,20 @@
+name:                souffle-haskell-isolation-test
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/luc-tielen/souffle-haskell-isolation-test#readme
+license:             BSD3
+author:              Luc Tielen
+maintainer:          luc.tielen@gmail.com
+copyright:           Luc Tielen, 2020
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  souffle-haskell-isolation-test:
+    source-dirs:      src
+    main:             Main.hs
