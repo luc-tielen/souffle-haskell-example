@@ -1,8 +1,8 @@
-name:                souffle-haskell-isolation-test
+name:                souffle-haskell-example
 version:             0.1.0.0
 #synopsis:
 #description:
-homepage:            https://github.com/luc-tielen/souffle-haskell-isolation-test#readme
+homepage:            https://github.com/luc-tielen/souffle-haskell-example#readme
 license:             BSD3
 author:              Luc Tielen
 maintainer:          luc.tielen@gmail.com
@@ -22,6 +22,6 @@ cxx-sources:
   - cbits/*.cpp
 
 executables:
-  souffle-haskell-isolation-test:
+  souffle-haskell-example:
     source-dirs:      src
     main:             Main.hs

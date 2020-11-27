@@ -1,4 +1,4 @@
-# souffle-haskell-isolation-test
+# souffle-haskell-example
 
 This project serves 2 purposes:
 
