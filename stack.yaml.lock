@@ -3,7 +3,18 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    name: souffle-haskell
+    version: 2.0.2
+    git: https://github.com/luc-tielen/souffle-haskell
+    pantry-tree:
+      size: 283506
+      sha256: c591017962e0cdb96522089cba3c9c2ec92a2b05557ae3686a3001030a2d9f10
+    commit: bdca12f6a3de504743298c865f826e71ef098385
+  original:
+    git: https://github.com/luc-tielen/souffle-haskell
+    commit: bdca12f6a3de504743298c865f826e71ef098385
 snapshots:
 - completed:
     size: 532832

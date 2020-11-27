@@ -13,6 +13,13 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
+  - souffle-haskell == 2.0.2
+
+cxx-options:
+  - -std=c++17
+  - -D__EMBEDDED_SOUFFLE__
+cxx-sources:
+  - cbits/*.cpp
 
 executables:
   souffle-haskell-isolation-test:

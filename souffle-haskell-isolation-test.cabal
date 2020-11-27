@@ -1,19 +1,19 @@
-cabal-version: 1.12
+cabal-version: 2.2
 
 -- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: bcd8b6015135243afaa7902439a9018b02214be9daa4b148c507b3be39214fac
+-- hash: 02b0a42580742cc9a1bb637881c29b40b0499e8090b5fb6be4cc8a2db1c58c60
 
 name:           souffle-haskell-isolation-test
 version:        0.1.0.0
-category:       Logic
+category:       Web
 homepage:       https://github.com/luc-tielen/souffle-haskell-isolation-test#readme
 author:         Luc Tielen
 maintainer:     luc.tielen@gmail.com
 copyright:      Luc Tielen, 2020
-license:        BSD3
+license:        BSD-3-Clause
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -25,6 +25,10 @@ executable souffle-haskell-isolation-test
       Paths_souffle_haskell_isolation_test
   hs-source-dirs:
       src
+  cxx-options: -std=c++17 -D__EMBEDDED_SOUFFLE__
+  cxx-sources:
+      cbits/path.cpp
   build-depends:
       base >=4.7 && <5
+    , souffle-haskell ==2.0.2
   default-language: Haskell2010
