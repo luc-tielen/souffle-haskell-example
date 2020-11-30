@@ -21,6 +21,10 @@ cxx-options:
 cxx-sources:
   - cbits/*.cpp
 
+when:
+  - condition: os(darwin)
+    extra-libraries: c++
+
 executables:
   souffle-haskell-example:
     source-dirs:      src

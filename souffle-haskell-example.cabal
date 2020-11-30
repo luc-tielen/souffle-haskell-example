@@ -4,12 +4,12 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 02b0a42580742cc9a1bb637881c29b40b0499e8090b5fb6be4cc8a2db1c58c60
+-- hash: df922ca9ff37947516aa4a5ba8777cd1cc59ac2df513264708bdfc9f2e56d48a
 
-name:           souffle-haskell-isolation-test
+name:           souffle-haskell-example
 version:        0.1.0.0
 category:       Web
-homepage:       https://github.com/luc-tielen/souffle-haskell-isolation-test#readme
+homepage:       https://github.com/luc-tielen/souffle-haskell-example#readme
 author:         Luc Tielen
 maintainer:     luc.tielen@gmail.com
 copyright:      Luc Tielen, 2020
@@ -19,10 +19,10 @@ build-type:     Simple
 extra-source-files:
     README.md
 
-executable souffle-haskell-isolation-test
+executable souffle-haskell-example
   main-is: Main.hs
   other-modules:
-      Paths_souffle_haskell_isolation_test
+      Paths_souffle_haskell_example
   hs-source-dirs:
       src
   cxx-options: -std=c++17 -D__EMBEDDED_SOUFFLE__
@@ -31,4 +31,7 @@ executable souffle-haskell-isolation-test
   build-depends:
       base >=4.7 && <5
     , souffle-haskell ==2.0.2
+  if os(darwin)
+    extra-libraries:
+        c++
   default-language: Haskell2010
