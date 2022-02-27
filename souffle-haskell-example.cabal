@@ -4,7 +4,7 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a6c55ea3ecfaab05ddc231e68469a597bde4461a2c2d072564542d41052420fa
+-- hash: 29d955875bddf8912cb6b71e511bae909e58f838ff57ca94ed5de9f2a028a789
 
 name:           souffle-haskell-example
 version:        0.1.0.0
@@ -29,8 +29,11 @@ executable souffle-haskell-example
       src
   cxx-options: -std=c++17 -D__EMBEDDED_SOUFFLE__
   cxx-sources:
-      cbits/categorize.cpp
+      cbits/path.cpp
   build-depends:
       base >=4.7 && <5
     , souffle-haskell ==3.2.0
+  if os(darwin)
+    extra-libraries:
+        c++
   default-language: Haskell2010
