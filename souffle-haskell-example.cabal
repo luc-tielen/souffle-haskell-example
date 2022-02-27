@@ -1,10 +1,10 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.6.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a351991dc952b59ed26eba2ff3e5e932659a41858badce4b3b875cef2e1828b8
+-- hash: a6c55ea3ecfaab05ddc231e68469a597bde4461a2c2d072564542d41052420fa
 
 name:           souffle-haskell-example
 version:        0.1.0.0
@@ -22,6 +22,8 @@ extra-source-files:
 executable souffle-haskell-example
   main-is: Main.hs
   other-modules:
+      Paths_souffle_haskell_example
+  autogen-modules:
       Paths_souffle_haskell_example
   hs-source-dirs:
       src
