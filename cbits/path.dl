@@ -1,0 +1,12 @@
+.decl edge(x: symbol, y: symbol)
+.decl reachable(x: symbol, y: symbol)
+
+.input edge
+.output reachable
+
+reachable(x, y) :-
+  edge(x, y).
+
+reachable(x, y) :-
+  edge(x, z),
+  reachable(z, y).
