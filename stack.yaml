@@ -42,7 +42,7 @@ packages:
 #
 extra-deps:
 - git: https://github.com/luc-tielen/souffle-haskell
-  commit: bdca12f6a3de504743298c865f826e71ef098385  # v2.0.2
+  commit: 6a556c8b7657aeb2c791cbf0def343e2172b969b  # v3.2.0
 
 # Override default flag values for local packages and extra-deps
 # flags: {}

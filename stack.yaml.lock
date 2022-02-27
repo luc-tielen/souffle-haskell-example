@@ -6,15 +6,15 @@
 packages:
 - completed:
     name: souffle-haskell
-    version: 2.0.2
+    version: 3.2.0
     git: https://github.com/luc-tielen/souffle-haskell
     pantry-tree:
-      size: 283506
-      sha256: c591017962e0cdb96522089cba3c9c2ec92a2b05557ae3686a3001030a2d9f10
-    commit: bdca12f6a3de504743298c865f826e71ef098385
+      size: 321923
+      sha256: 16020cb1f6384a9dbbda6956927bebb39aacf84fe939d1885328986c2fa362c7
+    commit: 6a556c8b7657aeb2c791cbf0def343e2172b969b
   original:
     git: https://github.com/luc-tielen/souffle-haskell
-    commit: bdca12f6a3de504743298c865f826e71ef098385
+    commit: 6a556c8b7657aeb2c791cbf0def343e2172b969b
 snapshots:
 - completed:
     size: 532832

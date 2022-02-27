@@ -13,7 +13,7 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
-  - souffle-haskell == 2.0.2
+  - souffle-haskell == 3.2.0
 
 cxx-options:
   - -std=c++17
